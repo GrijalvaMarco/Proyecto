@@ -4,12 +4,12 @@
 public partial class MainWindow
 {
 	private global::Gtk.Fixed fixed1;
-	private global::Gtk.Button BtnEntrar;
-	private global::Gtk.Label label2;
-	private global::Gtk.Label label3;
+	private global::Gtk.Label lblPassword;
 	private global::Gtk.Entry txtLogin;
 	private global::Gtk.Entry txtPassword;
-	private global::Gtk.Label label1;
+	private global::Gtk.Label lblLogin;
+	private global::Gtk.Label lblTitulo;
+	private global::Gtk.Button BtnEntrar;
 	
 	protected virtual void Build ()
 	{
@@ -23,31 +23,13 @@ public partial class MainWindow
 		this.fixed1.Name = "fixed1";
 		this.fixed1.HasWindow = false;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.BtnEntrar = new global::Gtk.Button ();
-		this.BtnEntrar.CanFocus = true;
-		this.BtnEntrar.Name = "BtnEntrar";
-		this.BtnEntrar.UseUnderline = true;
-		this.BtnEntrar.Label = global::Mono.Unix.Catalog.GetString ("GtkButton");
-		this.fixed1.Add (this.BtnEntrar);
-		global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.BtnEntrar]));
-		w1.X = 136;
-		w1.Y = 184;
-		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label2 = new global::Gtk.Label ();
-		this.label2.Name = "label2";
-		this.label2.LabelProp = global::Mono.Unix.Catalog.GetString ("label2");
-		this.fixed1.Add (this.label2);
-		global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label2]));
-		w2.X = 55;
-		w2.Y = 116;
-		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label3 = new global::Gtk.Label ();
-		this.label3.Name = "label3";
-		this.label3.LabelProp = global::Mono.Unix.Catalog.GetString ("label3");
-		this.fixed1.Add (this.label3);
-		global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label3]));
-		w3.X = 157;
-		w3.Y = 15;
+		this.lblPassword = new global::Gtk.Label ();
+		this.lblPassword.Name = "lblPassword";
+		this.lblPassword.LabelProp = global::Mono.Unix.Catalog.GetString ("Password");
+		this.fixed1.Add (this.lblPassword);
+		global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.lblPassword]));
+		w1.X = 55;
+		w1.Y = 116;
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.txtLogin = new global::Gtk.Entry ();
 		this.txtLogin.CanFocus = true;
@@ -55,9 +37,9 @@ public partial class MainWindow
 		this.txtLogin.IsEditable = true;
 		this.txtLogin.InvisibleChar = '•';
 		this.fixed1.Add (this.txtLogin);
-		global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.txtLogin]));
-		w4.X = 127;
-		w4.Y = 69;
+		global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.txtLogin]));
+		w2.X = 127;
+		w2.Y = 69;
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.txtPassword = new global::Gtk.Entry ();
 		this.txtPassword.CanFocus = true;
@@ -65,17 +47,35 @@ public partial class MainWindow
 		this.txtPassword.IsEditable = true;
 		this.txtPassword.InvisibleChar = '•';
 		this.fixed1.Add (this.txtPassword);
-		global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.txtPassword]));
-		w5.X = 126;
-		w5.Y = 111;
+		global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.txtPassword]));
+		w3.X = 126;
+		w3.Y = 111;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label1 = new global::Gtk.Label ();
-		this.label1.Name = "label1";
-		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString ("label1");
-		this.fixed1.Add (this.label1);
-		global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label1]));
-		w6.X = 60;
-		w6.Y = 71;
+		this.lblLogin = new global::Gtk.Label ();
+		this.lblLogin.Name = "lblLogin";
+		this.lblLogin.LabelProp = global::Mono.Unix.Catalog.GetString ("login");
+		this.fixed1.Add (this.lblLogin);
+		global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.lblLogin]));
+		w4.X = 60;
+		w4.Y = 71;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.lblTitulo = new global::Gtk.Label ();
+		this.lblTitulo.Name = "lblTitulo";
+		this.lblTitulo.LabelProp = global::Mono.Unix.Catalog.GetString ("Ingresa tu usuario y contraseña");
+		this.fixed1.Add (this.lblTitulo);
+		global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.lblTitulo]));
+		w5.X = 98;
+		w5.Y = 27;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.BtnEntrar = new global::Gtk.Button ();
+		this.BtnEntrar.CanFocus = true;
+		this.BtnEntrar.Name = "BtnEntrar";
+		this.BtnEntrar.UseUnderline = true;
+		this.BtnEntrar.Label = global::Mono.Unix.Catalog.GetString ("Ingresar");
+		this.fixed1.Add (this.BtnEntrar);
+		global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.BtnEntrar]));
+		w6.X = 223;
+		w6.Y = 171;
 		this.Add (this.fixed1);
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();

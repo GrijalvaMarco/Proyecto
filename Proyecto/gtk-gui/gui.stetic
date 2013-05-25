@@ -14,7 +14,78 @@
     <property name="WindowPosition">CenterOnParent</property>
     <signal name="DeleteEvent" handler="OnDeleteEvent" />
     <child>
-      <placeholder />
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Label" id="lblPassword">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Password</property>
+          </widget>
+          <packing>
+            <property name="X">55</property>
+            <property name="Y">116</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtLogin">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">127</property>
+            <property name="Y">69</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtPassword">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">126</property>
+            <property name="Y">111</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblLogin">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">login</property>
+          </widget>
+          <packing>
+            <property name="X">60</property>
+            <property name="Y">71</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblTitulo">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Ingresa tu usuario y contraseña</property>
+          </widget>
+          <packing>
+            <property name="X">98</property>
+            <property name="Y">27</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="BtnEntrar">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Ingresar</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnBtnEntrarClicked" />
+          </widget>
+          <packing>
+            <property name="X">223</property>
+            <property name="Y">171</property>
+          </packing>
+        </child>
+      </widget>
     </child>
   </widget>
 </stetic-interface>
