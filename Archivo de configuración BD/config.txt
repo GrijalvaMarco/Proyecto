@@ -1,0 +1,5 @@
+Server=localhost; 
+Database=directorio;
+User ID=root;
+Password=campeon19;
+Pooling=false;
