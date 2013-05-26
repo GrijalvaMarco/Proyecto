@@ -16,6 +16,7 @@ public partial class MainWindow: Gtk.Window
 	
 	protected void OnBtnEntrarClicked (object sender, EventArgs e)
 	{
+		
 		Proyecto.Autenticacion auth = new Proyecto.Autenticacion ();
 		if (auth.valido (this.txtLogin.Text.Trim (), this.txtPassword.Text.Trim ())) {
 			MessageDialog md = new MessageDialog (
@@ -25,6 +26,8 @@ public partial class MainWindow: Gtk.Window
 		      	ButtonsType.None, "Bienvenido usuario " + this.txtLogin.Text.Trim ()  
 			);
 			md.Show ();
+		NuevoForm nuevo = new NuevoForm();
+		nuevo.Show();
 		} else {
 			MessageDialog md = new MessageDialog (
 				null, 
@@ -33,6 +36,7 @@ public partial class MainWindow: Gtk.Window
 		      	ButtonsType.None, "Usted es un intruso " 
 			);
 			md.Show ();
+			
 		}
 	}
 	
